@@ -1,0 +1,239 @@
+﻿<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>CS85 Final</title>
+    <style type="text/css">
+    
+    button{  
+    width: 50px;
+    height: 40px;
+    } 
+    div.row1 {
+    position: absolute;
+    left: 655px;
+    border-style: inset;
+    }
+    div.row2 {
+    position: absolute;
+    left: 650px;
+    top:35px
+    }
+    div.row3 {
+    position: absolute;
+    left: 620px;
+    top: 80px
+    }
+    div.row4 {
+    position: absolute;
+    left: 665px;
+    top: 150px;
+    border-style: inset;
+    }
+    div.row5 {
+    position: absolute;
+    left: 650px;
+    top: 180px;
+    }
+    div.row6 {
+    position: absolute;
+    left: 620px;
+    top: 225px;
+    }
+    div.row7 {
+    position: absolute;
+    left: 620px;
+    top: 300px;
+    border-style: inset;
+    }
+    div.row8 {
+    position: absolute;
+    left: 695px;
+    top: 340px;
+    }
+    div.chord {
+    position: absolute;
+    left: 200px;
+    top:60px;    
+    }
+</style>
+    </head>
+<body>
+    <audio id="atone">
+        <source src="A.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="btone">
+        <source src="B.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="ctone">
+        <source src="C.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="dtone">
+        <source src="D.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="etone">
+        <source src="E.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="ftone">
+        <source src="f.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="gtone">
+        <source src="G.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="astone">
+        <source src="Ashort.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="bstone">
+        <source src="Bshort.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="cstone">
+        <source src="Cshort.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="dstone">
+        <source src="Dshort.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="estone">
+        <source src="Eshort.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="fstone">
+        <source src="Fshort.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="gstone">
+        <source src="Gshort.mp3" type="audio/mpeg">
+    </audio>
+
+    <div class ="row1">Standard Guitar Tones</div>
+    <div class="row2">
+    <button onclick="playAudio('A.mp3', 'Achord.png', document.getElementById('atone'),'A')" type="button">
+     <img src="A.png" height="35" width="35">
+    </button>
+    <button onclick="playAudio('B.mp3', 'Bchord.png', document.getElementById('btone'),'B' )" type="button">
+     <img src="B.png" height="35" width="35">
+    </button>
+    <button onclick="playAudio('C.mp3', 'Cchord.png', document.getElementById('ctone'),'C')" type="button">
+     <img src="C.png" height="35" width="35">
+    </button>
+    </div>
+    <div class="row3">
+    <button onclick="playAudio('D.mp3', 'Dchord.png', document.getElementById('dtone'),'D')" type="button">
+     <img src="D.png" height="35" width="35">
+    </button>
+    <button onclick="playAudio('E.mp3', 'Echord.png', document.getElementById('etone'),'E')" type="button">
+     <img src="E.png" height="35" width="35">
+    </button>
+    <button onclick="playAudio('F.mp3', 'Fchord.png', document.getElementById('ftone'),'F')" type="button">
+     <img src="F.png" height="35" width="35">
+    </button>
+    <button onclick="playAudio('G.mp3', 'Gchord.png', document.getElementById('gtone'),'G')" type="button">
+     <img src="G.png" height="35" width="35">
+    </button>
+    </div>
+    
+    <div class="row4">Short Guitar Tones</div>
+    <div class="row5">
+    <button onclick="playAudio('Ashort.mp3', 'Achord.png', document.getElementById('astone'),'A')" type="button">
+     <img src="A.png" height="35" width="35">
+    </button>
+    <button onclick="playAudio('Bshort.mp3', 'Bchord.png', document.getElementById('bstone'),'B')" type="button">
+     <img src="B.png" height="35" width="35">
+    </button>
+    <button onclick="playAudio('Cshort.mp3', 'Cchord.png', document.getElementById('cstone'),'C')" type="button">
+     <img src="C.png" height="35" width="35">
+    </button>
+    </div>
+    <div class="row6">
+    <button onclick="playAudio('Dshort.mp3', 'Dchord.png', document.getElementById('dstone'),'D')" type="button">
+     <img src="D.png" height="35" width="35">
+    </button>
+    <button onclick="playAudio('Eshort.mp3', 'Echord.png', document.getElementById('estone'),'E')" type="button">
+     <img src="E.png" height="35" width="35">
+    </button>
+    <button onclick="playAudio('Fshort.mp3', 'Fchord.png', document.getElementById('fstone'),'F')" type="button">
+     <img src="F.png" height="35" width="35">
+    </button>
+    <button onclick="playAudio('Gshort.mp3', 'Gchord.png', document.getElementById('gstone'),'G')" type="button">
+     <img src="G.png" height="35" width="35">
+    </button>
+    </div>
+
+    <div class="chord">
+        <img src ="Instructions.png" id="active" />
+    </div>
+
+    <div class="row7" id="chordlist">
+        Your chord progression will be displayed here!
+    </div>
+    <div class="row8">
+    <button onclick="playlist()" type="button" >
+     <img src="play.png" height="35" width="35"  >
+    </button><br />
+      <input type="checkbox" id ="singlemode"> Single Note Mode
+    </div>
+
+  <script>
+      ch1 = null; ch2 = null; ch3 = null; ch4 = null;
+      chp1 = null; chp2 = null; chp3 = null; chp4 = null;
+
+      function playAudio(tone, pic, single, note) {
+          if (document.getElementById("singlemode").checked === true) {
+              single.play();
+              document.getElementById('active').src = pic;
+          } else {
+              if (ch1 === null) {
+                  ch1 = tone;
+                  chp1 = pic;
+                  document.getElementById('chordlist').innerHTML = note;
+                  dynchord = document.getElementById('chordlist').innerHTML;
+              } else if(ch2 === null){
+                  ch2 = tone;
+                  chp2 = pic;
+                  document.getElementById('chordlist').innerHTML = dynchord + ", " + note;
+                  dynchord = document.getElementById('chordlist').innerHTML;
+              } else if (ch3 === null) {
+                  ch3 = tone;
+                  chp3 = pic;
+                  document.getElementById('chordlist').innerHTML = dynchord + ", " + note;
+                  dynchord = document.getElementById('chordlist').innerHTML;
+              } else if (ch4 === null) {
+                  ch4 = tone;
+                  chp4 = pic;
+                  document.getElementById('chordlist').innerHTML = dynchord + ", " + note;
+                  dynchord = document.getElementById('chordlist').innerHTML;
+              } else {
+                  alert("Progressions are set to four chords");
+              }
+          }
+     }
+
+      function playlist() {
+          var audio = new Audio(), i = 0;
+          var playlist = new Array(ch1, ch2, ch3, ch4);
+          var piclist = new Array(chp1, chp2, chp3, chp4);
+          if (ch4 === null) {
+              alert("Please enter four chords before playing a progression, or switch to Single Note Mode")
+          } else {
+              audio.addEventListener('ended', function () {
+                  i = ++i < playlist.length ? i : "complete";
+                  if (i === "complete") {
+                      document.getElementById('active').src = 'Instructions.png';
+                      ch1 = null; ch2 = null; ch3 = null; ch4 = null;
+                      chp1 = null; chp2 = null; chp3 = null; chp4 = null;
+                      document.getElementById('chordlist').innerHTML = 'Your chord progression will be displayed here!';
+                  } else {
+                      console.log(i)
+                      document.getElementById('active').src = piclist[i];
+                      audio.src = playlist[i];
+                      audio.play();
+                  }
+              }, true);
+              audio.loop = false;
+              audio.src = playlist[0];
+              document.getElementById('active').src = piclist[0];
+              audio.play();
+          }
+      }
+
+ </script>
+
+</body>
+</html>
